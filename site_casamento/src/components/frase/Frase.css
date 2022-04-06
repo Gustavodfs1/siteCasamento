@@ -1,0 +1,52 @@
+.citacao{
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    }
+
+    .container-frase{
+        width: 100%;
+        height: 550px;
+        background-image: url(../../assets/citacao.jpg);
+       background-size: cover;
+        background-repeat: 'no-repeat';
+        object-fit: cover;
+    }
+
+    .frase{
+        color: whitesmoke;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: fit-content;
+        margin: auto;
+        font-family: Red Hat Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 70px;
+        line-height: 103px;
+    }
+
+    .frase2{
+        color: white;
+        text-align: center;
+        position: absolute;
+        top: 10;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: fit-content;
+        margin: auto;
+        font-family: Red Hat Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 103px;
+    }
+        
+
+
+    

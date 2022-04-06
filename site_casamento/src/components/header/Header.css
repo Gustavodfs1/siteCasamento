@@ -1,0 +1,21 @@
+
+.Container{
+    height: 30px;
+    width: 100%;
+    background-color: red;
+}
+
+.navbar{
+    background-color: #FFFBF3;
+    color: black;
+}
+
+.navbar-itens{
+    display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+padding: 1px 0px;
+margin-left: 30%;
+
+}

@@ -1,0 +1,33 @@
+
+.container{
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+   width: 100%;
+   height: 100px;
+   background: linear-gradient(90deg, rgba(168, 75, 44, 0.7) 10%, rgba(205, 122, 46, 0.7) 37.39%, rgba(251, 184, 0, 0.7) 71.28%, rgba(255, 251, 243, 0.7) 100.0%);
+
+}
+
+.dias{
+width: 66px;
+height: 57px;
+
+
+font-family: Red Hat Display;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 57px;
+/* identical to box height, or 158% */
+
+display: table-column;
+align-items: center;
+text-align: center;
+margin-left: 25%;
+
+/* preto */
+
+color: #2E2B28;
+}
