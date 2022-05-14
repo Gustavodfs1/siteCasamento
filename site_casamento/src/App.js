@@ -1,23 +1,39 @@
 
-import './App.css';
-import Header from './components/Header/Header';
-import Carrocel from './components/Carrocel/Carrocel';
-import Regressiva from './components/regressiva/Regressiva';
-import Nos from './components/nos/Nos';
-import Frase from './components/frase/Frase';
-import Saber from './components/saber/Saber';
+//import './App.css';
+import { createTheme } from "@mui/system";
+import {Home} from "./pages/Home";
+import { ThemeProvider } from "@mui/styles";
 
+const theme = createTheme({
+  typography: {
+    fontFamily: [
+      'Red Hat Display',
+      'BlinkMacSystemFont',
+      '"Segoe UI"',
+      'Roboto',
+      '"Helvetica Neue"',
+      'Arial',
+      'sans-serif',
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+    ].join(','),
+  },
+  overrides: {
+    MuiTypography: {
+      body1: { 
+        fontFamily: 'Red Hat Display',
+        color: 'purple'
+      },
+    }
+  }
+});
 
 function App() {
   return (
-    <div>
- <Header/>
- <Carrocel/>
- <Regressiva/>
- <Nos/>
- <Frase/>
- <Saber/>
- </div>
+    <ThemeProvider theme={theme}>
+      <Home />
+    </ThemeProvider>
   );
 }
 
