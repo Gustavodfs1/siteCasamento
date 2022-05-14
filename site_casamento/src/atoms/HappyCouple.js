@@ -1,0 +1,49 @@
+import {Typography} from "@mui/material";
+import {makeStyles} from "@mui/styles";
+
+const useStyles = makeStyles({
+    container: {
+        background: 'url(/img/happy_couple.jpg), radial-gradient(circle, rgba(0,0,0,0.39931722689075626) 0%, rgba(255,255,255,0.2553396358543417) 89%, rgba(255,255,255,0.04525560224089631) 100%)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        height: '17rem',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        // padding: '0 2rem',
+    },
+    title: {
+        color: "white",
+        fontFamily: 'SaltyFeathers !important',
+        fontSize: '5rem !important',
+        textAlign: 'center',
+        paddingTop: '3rem'
+    },
+    rspvContainer: {
+        border: '1px solid rgba(255, 255, 255, 0.7);',
+        borderWidth: '1px 0',
+        marginTop: '2rem',
+        cursor: 'pointer'
+    },
+    rspv: {
+        color: 'white',
+        fontSize: '1rem !important',
+        fontFamily: '"Red Hat Display", sans-serif !important',
+        fontWeight: '600 !important',
+        padding: '.2rem 0',
+        cursor: 'pointer'
+    },
+});
+
+export const HappyCouple = () => {
+    const classes = useStyles();
+    return (
+        <div className={classes.container}>
+            <Typography className={classes.title} variant="h1">deborah e gustavo</Typography>
+            <div className={classes.rspvContainer}>
+                <Typography className={classes.rspv} variant="body1">R S P V</Typography>
+            </div>
+        </div>
+    );
+};
