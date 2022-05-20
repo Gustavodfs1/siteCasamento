@@ -28,11 +28,12 @@ const useStyles = makeStyles({
     },
     rspv: {
         color: 'white',
-        fontSize: '1rem !important',
+        fontSize: '14px !important',
         fontFamily: '"Red Hat Display", sans-serif !important',
-        fontWeight: '600 !important',
+        fontWeight: '700 !important',
         padding: '.2rem 0',
-        cursor: 'pointer'
+        cursor: 'pointer',
+        letterSpacing: '.27em !important'
     },
 });
 
@@ -42,7 +43,7 @@ export const HappyCouple = () => {
         <div className={classes.container}>
             <Typography className={classes.title} variant="h1">deborah e gustavo</Typography>
             <div className={classes.rspvContainer}>
-                <Typography className={classes.rspv} variant="body1">R S P V</Typography>
+                <Typography className={classes.rspv} variant="body1">RSPV</Typography>
             </div>
         </div>
     );

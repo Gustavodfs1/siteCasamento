@@ -6,7 +6,7 @@ import useCountDown from "react-countdown-hook";
 const useStyles = makeStyles({
     container: {
         background: 'linear-gradient(90deg, rgba(168, 75, 44, 0.7) 0%, rgba(205, 122, 46, 0.7) 37.39%, rgba(251, 184, 0, 0.7) 71.28%, rgba(255, 251, 243, 0.7) 100.31%)',
-        height: '3.5rem',
+        height: 50,
         display: 'flex',
         justifyContent: 'space-evenly',
         alignItems: 'center',

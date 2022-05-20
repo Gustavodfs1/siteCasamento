@@ -17,8 +17,9 @@ const useStyles = makeStyles({
     quantity: {
         color: '#2E2B28',
         fontWeight: '700 !important',
-        fontSize: '1.3rem !important',
+        fontSize: '18px !important',
         fontFamily: '"Red Hat Display", sans-serif !important',
+        lineHeight: '24px !important'
         // lineHeight: 0,
         // letterSpacing: '2rem !important'
     },
@@ -27,8 +28,8 @@ const useStyles = makeStyles({
         textTransform: 'uppercase',
         fontWeight: '400 !important',
         fontFamily: '"Red Hat Display", sans-serif !important',
-        letterSpacing: '.2rem !important',
-        fontSize: '.7rem !important',
+        letterSpacing: '.27em !important',
+        fontSize: '8px !important',
         // lineHeight: 0,
         // letterSpacing: '2rem !important'
     },
