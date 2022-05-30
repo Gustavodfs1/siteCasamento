@@ -7,6 +7,7 @@ const useStyles = makeStyles({
     container: {
         display: 'flex',
         alignItems: 'center',
+        padding: '1rem 0',
     },
     pic: {
         backgroundColor: '#698093',
@@ -15,7 +16,8 @@ const useStyles = makeStyles({
         minHeight: '35px !important',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        marginRight: '1rem'
+        marginRight: '1rem',
+        // backgroundAttachment: 'fixed'
     },
     title: {
         color: '#2E2B28',
@@ -28,6 +30,7 @@ const useStyles = makeStyles({
         alignItems: 'center',
         letterSpacing: '0.27em !important',
         textTransform: 'uppercase',
+        marginBottom: '.2rem !important'
     },
     text: {
         fontFamily: '"Fakt Pro", sans-serif !important',
@@ -36,12 +39,11 @@ const useStyles = makeStyles({
         lineHeight: '140% !important',
         letterSpacing: '0.095em !important',
         color: '#2E2B28 !important',
-        marginTop: '.2rem !important'
     },
     horizontalThing: {
         backgroundColor: '#2E2B28',
-        width: 50,
-        height: 1.5
+        width: 65,
+        height: 2
     }
 });
 
@@ -55,9 +57,13 @@ export const Stuff = (props) => {
                 <Typography className={classes.title}>
                     {props.title}
                 </Typography>
-                <Typography className={classes.text}>
-                    {props.text}
-                </Typography>
+                {
+                    props.text.map(item =>
+                        <Typography className={classes.text}>
+                            {item}
+                        </Typography>
+                    )
+                }
             </div>
         </div>
     );
