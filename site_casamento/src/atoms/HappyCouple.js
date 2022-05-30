@@ -11,7 +11,6 @@ const useStyles = makeStyles({
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        // padding: '0 2rem',
     },
     title: {
         color: "white",

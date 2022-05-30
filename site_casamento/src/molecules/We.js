@@ -1,25 +1,15 @@
 import {Typography} from "@mui/material";
 import {makeStyles} from "@mui/styles";
 import {Profile} from "../atoms/Profile";
+import {Title} from "../atoms/Title";
 
 const useStyles = makeStyles({
     container: {
-        height: '17rem',
         display: 'flex',
         flexDirection: 'column',
         // justifyContent: 'center',
         alignItems: 'center',
-        padding: '0 2rem',
-    },
-    title: {
-        color: '#304E74',
-        fontFamily: '"Red Hat Display", sans-serif !important',
-        fontSize: '18px !important',
-        textAlign: 'center',
-        paddingTop: '3rem',
-        fontWeight: '700 !important',
-        lineHeight: 24,
-        letterSpacing: '3px !important'
+        padding: '0 2rem 2rem',
     },
     profiles: {
         // height: '17rem',
@@ -44,7 +34,7 @@ export const We = () => {
     const classes = useStyles();
     return (
         <div className={classes.container}>
-            <Typography className={classes.title} variant="h1">NÓS</Typography>
+            <Title text="NÓS" />
             <div className={classes.profiles}>
                 <Profile pic={'/img/deh.jpg'} title="NOIVA" subtitle="Deborah Vilas Boas" />
                 <Profile pic={'/img/guh.jpg'} title="NOIVO" subtitle="Gustavo Faria" />
