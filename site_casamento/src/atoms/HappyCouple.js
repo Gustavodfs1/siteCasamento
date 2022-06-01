@@ -6,7 +6,7 @@ const useStyles = makeStyles({
         background: 'url(/img/happy_couple.jpg), radial-gradient(circle, rgba(0,0,0,0.39931722689075626) 0%, rgba(255,255,255,0.2553396358543417) 89%, rgba(255,255,255,0.04525560224089631) 100%)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        height: '17rem',
+        minHeight: '17rem',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',

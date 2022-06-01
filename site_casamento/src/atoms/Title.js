@@ -11,7 +11,7 @@ const useStyles = makeStyles({
         paddingTop: '3rem',
         fontWeight: '700 !important',
         lineHeight: 24,
-        letterSpacing: '3px !important'
+        letterSpacing: '3px !important',
     },
 });
 

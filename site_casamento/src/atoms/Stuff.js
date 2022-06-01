@@ -42,9 +42,9 @@ const useStyles = makeStyles({
     },
     horizontalThing: {
         backgroundColor: '#2E2B28',
-        width: 65,
+        minWidth: 25,
         height: 2
-    }
+    },
 });
 
 export const Stuff = (props) => {
@@ -58,10 +58,8 @@ export const Stuff = (props) => {
                     {props.title}
                 </Typography>
                 {
-                    props.text.map(item =>
-                        <Typography className={classes.text}>
-                            {item}
-                        </Typography>
+                    props.text.map((item, index) =>
+                        <div key={index} dangerouslySetInnerHTML={{__html: item}} className={classes.text}/>
                     )
                 }
             </div>
