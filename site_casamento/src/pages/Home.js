@@ -4,6 +4,7 @@ import {We} from "../molecules/We";
 import {Quote} from "../molecules/Quote";
 import {StuffUNeed2Know} from "../molecules/StuffUNeed2Know";
 import {Where} from "../molecules/Where";
+import {Gifts} from "../molecules/Gifts";
 
 export const Home = () => (
     <div>
@@ -13,5 +14,6 @@ export const Home = () => (
         <Quote />
         <StuffUNeed2Know />
         <Where />
+        <Gifts />
     </div>
 );
