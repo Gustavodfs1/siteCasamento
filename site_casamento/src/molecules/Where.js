@@ -74,12 +74,11 @@ const useStyles = makeStyles({
     }
 });
 
-const BootstrapButton = styled(Button)({
+const DebsButton = styled(Button)({
     boxShadow: 'none',
     textTransform: 'none',
     fontSize: 12,
     padding: '1.5rem !important',
-    // lineHeight: 1.5,
     backgroundColor: '#304E74 !important',
     border: '2px #304E74 solid !important',
     height: '36px',
@@ -95,14 +94,6 @@ const BootstrapButton = styled(Button)({
             boxShadow: 'none',
             color: '#304E74'
         },
-        // '&:active': {
-        //     boxShadow: 'none',
-        //     backgroundColor: '#0062cc',
-        //     borderColor: '#005cbf',
-        // },
-        // '&:focus': {
-        //     boxShadow: '0 0 0 0.2rem rgba(0,123,255,.5)',
-        // },
 });
 
 export const Where = () => {
@@ -127,9 +118,9 @@ export const Where = () => {
                 33200-000 | Vespasiano - MG
             </div>
             <div className={classes.buttonContainer}>
-                <BootstrapButton variant="contained" href="https://maps.app.goo.gl/SfU6gLadrahenwXb9" target="_blank">
+                <DebsButton variant="contained" href="https://maps.app.goo.gl/SfU6gLadrahenwXb9" target="_blank">
                     INICIAR ROTA
-                </BootstrapButton>
+                </DebsButton>
             </div>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15022.585344500681!2d-43.9037069!3d-19.7276757!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6905b6ff18582c0c!2sS%C3%ADtio%20Para%C3%ADso%20da%20Mata!5e0!3m2!1spt-BR!2sbr!4v1654476437758!5m2!1spt-BR!2sbr"

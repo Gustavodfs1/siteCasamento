@@ -7,7 +7,8 @@ const useStyles = makeStyles({
         justifyContent: 'center',
         flexDirection: 'column',
         alignItems: 'center',
-        width: '80px !important',
+        maxWidth: '74px !important',
+        margin: '0 auto'
     },
     title: {
         fontFamily: 'Fakt Pro',

@@ -1,4 +1,3 @@
-import {Typography} from "@mui/material";
 import {makeStyles} from "@mui/styles";
 
 
@@ -10,7 +9,7 @@ const useStyles = makeStyles({
         textAlign: 'center',
         paddingTop: '3rem',
         fontWeight: '700 !important',
-        lineHeight: 24,
+        // lineHeight: 24,
         letterSpacing: '3px !important',
     },
 });
@@ -18,6 +17,6 @@ const useStyles = makeStyles({
 export const Title = (props) => {
     const classes = useStyles();
     return(
-        <Typography className={classes.title} variant="h2">{props.text}</Typography>
+        <div className={classes.title}>{props.text}</div>
     );
 };
