@@ -34,8 +34,8 @@ export const StuffUNeed2Know = () => {
                 <div>
                     <Stuff pic="/img/icon_clock.png" title="HORÁRIO" text={["O horário combinado é <b>14h30</b>.", "Não se atrase para aproveitar muuuuito!", "Depois não vem reclamar que acabou cedo rs"]} />
                     <Stuff pic="/img/icon_car.png" title="ESTACIONAMENTO" text={["Temos estacionamento disponível.", "Mas <b>Só vá de carro se não for beber</b> ;)"]} />
-                    <Stuff pic="/img/icon_floor.png" title="CONFIRME PRESENÇA" text={["Não se esqueça de confirmar sua presença através do RSPV aqui do site ;)"]} />
-                    <Stuff pic="/img/icon_check.png" title="PISO" text={["No espaço da cerimônia, <b>o piso é de pedras.</b>", "<b>Evite saltos finos</b> para ficar à vontade! :D"]} />
+                    <Stuff pic="/img/icon_check.png" title="CONFIRME PRESENÇA" text={["Não se esqueça de confirmar sua presença através do RSPV aqui do site ;)"]} />
+                    <Stuff pic="/img/icon_floor.png" title="PISO" text={["No espaço da cerimônia, <b>o piso é de pedras.</b>", "<b>Evite saltos finos</b> para ficar à vontade! :D"]} />
                 </div>
             </div>
         </div>

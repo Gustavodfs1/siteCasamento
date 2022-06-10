@@ -67,6 +67,7 @@ const useStyles = makeStyles({
         flexDirection: 'column',
         height: '300px',
         justifyContent: 'space-around',
+        
         // justifyContent: 'center',
         // marginTop: '2rem'
     },
@@ -101,35 +102,66 @@ const godmothers = [
         pic2: '/img/godmother/anderson.png',
     },
     {
-        name1: 'Anderson Faria',
-        pic1: '/img/godmother/anderson.png',
-        name2: 'Fernanda Vilas Boas',
-        pic2: '/img/godmother/fernanda.png',
+        name1: 'Marina',
+        pic1: '/img/godmother/marina.png',
+        name2: 'Talles',
+        pic2: '/img/godmother/talles.png',
     },
     {
-        name1: 'Fernanda Vilas Boas',
+        name1: 'Igor',
+        pic1: '/img/godmother/igor.png',
+        name2: 'Lorena',
+        pic2: '/img/godmother/lorena.png',
+    },
+    {
+        name1: 'Clarissa',
+        pic1: '/img/godmother/cla.png',
+        name2: 'Ana Luiza',
+        pic2: '/img/godmother/ana.png',
+    },
+    {
+        name1: 'Helena',
+        pic1: '/img/godmother/helena.png',
+        name2: 'Yan',
+        pic2: '/img/godmother/yan.png',
+    },
+    {
+        name1: 'Clarissa',
+        pic1: '/img/godmother/clarissa.png',
+        name2: 'Hudson',
+        pic2: '/img/godmother/hudson.png',
+    },
+    {
+        name1: 'Kika',
+        pic1: '/img/godmother/kika.png',
+        name2: 'Aninha',
+        pic2: '/img/godmother/aninha.png',
+    },
+    {
+        name1: 'Raissa',
+        pic1: '/img/godmother/raissa.png',
+        name2: 'Lucas',
+        pic2: '/img/godmother/lucas.png',
+    },
+    {
+        name1: 'Ju',
+        pic1: '/img/godmother/ju.png',
+        name2: 'Tiago',
+        pic2: '/img/godmother/tiago.png',
+    },
+    {
+        name1: 'Kika',
         pic1: '/img/godmother/fernanda.png',
         name2: 'Anderson Faria',
-        pic2: '/img/godmother/anderson.png',
+        pic2: '/img/godmother/kika.png',
     },
     {
-        name1: 'Fernanda Vilas Boas',
-        pic1: '/img/godmother/fernanda.png',
-        name2: 'Anderson Faria',
-        pic2: '/img/godmother/anderson.png',
+        name1: 'Aninha',
+        pic1: '/img/godmother/aninha.png',
+        name2: 'yo',
+        pic2: '/img/godmother/yo.png',
     },
-    {
-        name1: 'Anderson Faria',
-        pic1: '/img/godmother/anderson.png',
-        name2: 'Fernanda Vilas Boas',
-        pic2: '/img/godmother/fernanda.png',
-    },
-    {
-        name1: 'Fernanda Vilas Boas',
-        pic1: '/img/godmother/fernanda.png',
-        name2: 'Anderson Faria',
-        pic2: '/img/godmother/anderson.png',
-    },
+    
 ];
 
 export const Godmothers = () => {
