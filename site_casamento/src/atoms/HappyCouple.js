@@ -41,9 +41,11 @@ export const HappyCouple = () => {
     return (
         <div className={classes.container}>
             <Typography className={classes.title} variant="h1">deborah e gustavo</Typography>
-            <div className={classes.rspvContainer}>
-                <Typography className={classes.rspv} variant="body1">RSPV</Typography>
-            </div>
+            <a href="#rspv">
+                <div className={classes.rspvContainer} onClick={() => document.getElementById('rspv').scrollIntoView()}>
+                    <Typography className={classes.rspv} variant="body1">RSPV</Typography>
+                </div>
+            </a>
         </div>
     );
 };
