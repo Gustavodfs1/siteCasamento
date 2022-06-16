@@ -5,12 +5,13 @@ const useStyles = makeStyles({
     container: {
         height: 172,
         left: 0,
-        backgroundImage: 'url("/img/quote.png")',
+        backgroundImage: 'url("/img/foto4.jpg")',
         backgroundSize: 'cover',
         padding: '0 2rem',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center'
+        
     },
     text: {
         fontFamily: '"Red Hat Display", sans-serif !important',

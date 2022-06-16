@@ -111,39 +111,59 @@ const DebsButton = styled(Button)({
 
 const experiences = [
     {
-        title: 'Aquele jantarzinho à luz de velas',
+        title: 'Comprar tempero no Grand Bazar',
         price: '300,00',
-        pic: '/img/experience/luz-de-velas.jpg'
+        pic: '/img/experience/gift1.jpg'
     },
     {
-        title: 'Aquele jantarzinho à luz de velas',
-        price: '300,00',
-        pic: '/img/experience/luz-de-velas.jpg'
+        title: '#PraAcordar Tomar um Café Turco',
+        price: '50,00',
+        pic: '/img/experience/gift2.jpg'
     },
     {
-        title: 'Aquele jantarzinho à luz de velas',
-        price: '300,00',
-        pic: '/img/experience/luz-de-velas.jpg'
+        title: 'Passeio de balão na Capadócia',
+        price: '600,00',
+        pic: '/img/experience/gift3.jpg'
     },
     {
-        title: 'Aquele jantarzinho à luz de velas',
-        price: '300,00',
-        pic: '/img/experience/luz-de-velas.jpg'
+        title: 'Curtir um banho turco',
+        price: '200,00',
+        pic: '/img/experience/gift4.jpg'
     },
     {
-        title: 'Aquele jantarzinho à luz de velas',
-        price: '300,00',
-        pic: '/img/experience/luz-de-velas.jpg'
+        title: 'Comprar muito turkish delight',
+        price: '100,00',
+        pic: '/img/experience/gift5.jpg'
     },
     {
-        title: 'Aquele jantarzinho à luz de velas',
-        price: '300,00',
-        pic: '/img/experience/luz-de-velas.jpg'
+        title: 'Excesso de bagagem pra trazer presente',
+        price: '350,00',
+        pic: '/img/experience/gift6.jpg'
     },
     {
-        title: 'Aquele jantarzinho à luz de velas',
-        price: '300,00',
-        pic: '/img/experience/luz-de-velas.jpg'
+        title: 'Tapete persa, imagina?',
+        price: '650,00',
+        pic: '/img/experience/gift7.jpg'
+    },
+    {
+        title: 'Passeio pelo Bósforo',
+        price: '230,00',
+        pic: '/img/experience/gift8.jpg'
+    },
+    {
+        title: 'Chip 5G pra postar tuuudo!',
+        price: '45,00',
+        pic: '/img/experience/chip.jpg'
+    },
+    {
+        title: 'Lanche no aeroporto',
+        price: '230,00',
+        pic: '/img/experience/lanche.jpg'
+    },
+    {
+        title: 'Passeio na cidade subterrânea',
+        price: '270,00',
+        pic: '/img/experience/cidade.jpg'
     },
 ];
 
@@ -157,8 +177,12 @@ export const Gifts = () => {
                 <Title text="VAMOS AMAR OS RECEBIDOS!"/>
                 <div className={classes.subtitle}>Lista de presentes</div>
                 <div className={classes.lists}>
-                    <img src="/img/camicado.png" alt="CAMICADO"/>
-                    <img src="/img/ponto.png" alt="PONTO"/>
+                    <a href=" https://lista.camicado.com.br/dehegu">
+                    <img src="/img/camicado.jpg" alt="CAMICADO" />
+                    </a>
+                    <a href=" https://listas.pontofrio.com.br/dehegu">
+                    <img src="/img/ponto.jpg" alt="PONTO" /> 
+                    </a>
                 </div>
                 <div className={classes.experiencesSubtitle}>
                     Caso prefira, vamos amar ser presenteados com experiências para a Lua-de-Mel!
