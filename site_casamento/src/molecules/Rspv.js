@@ -1,18 +1,18 @@
 import {makeStyles, styled} from "@mui/styles";
 import {Title} from "../atoms/Title";
-import Carousel from "react-multi-carousel"; // https://www.npmjs.com/package/react-multi-carousel
 import "react-multi-carousel/lib/styles.css";
-import {Experience} from "../atoms/Experience";
 import {useState} from "react";
-import {Button, Container, Grid, TextField} from "@mui/material";
+import {Container} from "@mui/material";
 import {useForm} from "react-hook-form";
-import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
-import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
-import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
+
+import { Button, Form } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const useStyles = makeStyles({
     container: {
         // left: 0,
+        backgroundImage: 'url("/img/foto7.jpg")',
         backgroundSize: 'cover',
         padding: '0 2rem',
         display: 'flex',
@@ -38,7 +38,7 @@ const useStyles = makeStyles({
         textAlign: 'center',
         letterSpacing: '0.27em',
         textTransform: 'uppercase',
-        color: '#2E2B28',
+        color: 'white',
         marginTop: '1rem'
     },
     experiencesSubtitle: {
@@ -82,7 +82,7 @@ const DebsButton = styled(Button)({
     backgroundColor: '#304E74 !important',
     border: '2px #304E74 solid !important',
     height: '36px',
-    width: '240px !important',
+    width: '160px !important',
     borderRadius: '40px !important',
     letterSpacing: '0.27em !important',
     fontFamily: [
@@ -107,22 +107,32 @@ export const Rspv = () => {
             <Container>
                 <Title text="CONFIRME SUA PRESENÇA"/>
                 <div className={classes.subtitle}>E NOS VEMOS LÁ! ;)</div>
-                <form onSubmit={handleSubmit((data) => setData(JSON.stringify(data)))}>
-                    <div className={classes.inputContainer}>
-                        <PersonOutlineIcon/>
-                        <TextField label="Nome completo" variant="standard" classes={classes.inputField}/>
-                    </div>
-                    <div className={classes.inputContainer}>
-                        <PhoneAndroidIcon/>
-                        <TextField label="Telefone" variant="standard" />
-                    </div>
-                    <div className={classes.inputContainer}>
-                        <PeopleAltIcon/>
-                        <TextField label="Nome dos convidados" variant="standard" />
-                    </div>
-                </form>
+                <Form onSubmit={handleSubmit((data) => setData(JSON.stringify(data)))}>
+                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Label></Form.Label>
+                        <Form.Control type="nome" placeholder="Seu nome" />
+                        <Form.Text className="text-muted">
+                        </Form.Text>
+                    </Form.Group>
+
+                    <Form.Group className="mb-3" controlId="formBasicPassword">
+                        <Form.Label></Form.Label>
+                        <Form.Control type="mensagem" placeholder="Mensagem" />
+                    </Form.Group>
+                    <Form.Label style={{color:"white"}}>Indique a quantidade de confirmados</Form.Label>
+                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                        <Form.Select size="sm" style={{width:"60%"}} aria-label="Convites incluindo voce">
+                            <option>Quantidade</option>
+                            <option value="1">1 - Incuindo o seu</option>
+                            <option value="2">2 - Incuindo o seu</option>
+                            <option value="3">3 - Incuindo o seu</option>
+                            <option value="4">4 - Incuindo o seu</option>
+                            <option value="5">5 - Incuindo o seu</option>
+                        </Form.Select>
+                    </Form.Group>
+                </Form>
                 <DebsButton variant="contained" target="_blank" >
-                    ENVIAR
+                   <a style={{color: "white"}}> ENVIAR</a>
                 </DebsButton>
             </Container>
         </div>

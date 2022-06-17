@@ -115,9 +115,9 @@ const godmothers = [
     },
     {
         name1: 'Clarissa',
-        pic1: '/img/godmother/cla.png',
+        pic1: '/img/godmother/clarice.png',
         name2: 'Ana Luiza',
-        pic2: '/img/godmother/ana.png',
+        pic2: '/img/godmother/nalu.png',
     },
     {
         name1: 'Helena',
@@ -151,9 +151,9 @@ const godmothers = [
     },
     {
         name1: 'Kika',
-        pic1: '/img/godmother/fernanda.png',
-        name2: 'Anderson Faria',
-        pic2: '/img/godmother/kika.png',
+        pic1: '/img/godmother/kika.png',
+        name2: 'Rafael Vidigal',
+        pic2: '/img/godmother/vidigal.png',
     },
     {
         name1: 'Aninha',
