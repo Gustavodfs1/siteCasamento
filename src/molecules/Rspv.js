@@ -97,10 +97,23 @@ const DebsButton = styled(Button)({
 });
 
 export const Rspv = () => {
+    const [nome, setNome] = useState("")
+    const [mensagem, setMensagem] = useState("")
+    const [acompanhantes, setAcompanhantes] = useState(0)
     const classes = useStyles();
     // const [isExpanded, setExpanded] = useState(false);
     const { register, handleSubmit } = useForm();
     const [data, setData] = useState("");
+
+    const envioRspv = (() => {
+        const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ nome, mensagem, acompanhantes })
+        };
+        fetch('https://casorio-punwok3poa-uc.a.run.app/api/rsvp', requestOptions)
+            .then(response => response.json());
+    });
 
     return (
         <div id="rspv" className={classes.container}>
@@ -110,18 +123,18 @@ export const Rspv = () => {
                 <Form onSubmit={handleSubmit((data) => setData(JSON.stringify(data)))}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label></Form.Label>
-                        <Form.Control type="nome" placeholder="Seu nome" />
-                        <Form.Text className="text-muted">
+                        <Form.Control onChange={event => setNome(event.target.value)} type="nome" placeholder="Seu nome" />
+                        <Form.Text   className="text-muted">
                         </Form.Text>
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Label></Form.Label>
-                        <Form.Control type="mensagem" placeholder="Mensagem" />
+                        <Form.Control onChange={event => setMensagem(event.target.value)} type="mensagem" placeholder="Mensagem" />
                     </Form.Group>
                     <Form.Label style={{color:"white"}}>Indique a quantidade de confirmados</Form.Label>
                     <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                        <Form.Select size="sm" style={{width:"60%"}} aria-label="Convites incluindo voce">
+                        <Form.Select onChange={event => setAcompanhantes(event.target.value)} size="sm" style={{width:"60%"}} aria-label="Convites incluindo voce">
                             <option>Quantidade</option>
                             <option value="1">1 - Incuindo o seu</option>
                             <option value="2">2 - Incuindo o seu</option>
@@ -131,7 +144,7 @@ export const Rspv = () => {
                         </Form.Select>
                     </Form.Group>
                 </Form>
-                <DebsButton variant="contained" target="_blank" >
+                <DebsButton onClick={envioRspv} variant="contained" target="_blank">
                    <a style={{color: "white"}}> ENVIAR</a>
                 </DebsButton>
             </Container>
