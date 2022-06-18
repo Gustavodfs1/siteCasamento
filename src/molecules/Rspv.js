@@ -136,11 +136,11 @@ export const Rspv = () => {
                     <Form.Group className="mb-3" controlId="formBasicCheckbox">
                         <Form.Select onChange={event => setAcompanhantes(event.target.value)} size="sm" style={{width:"60%"}} aria-label="Convites incluindo voce">
                             <option>Quantidade</option>
-                            <option value="1">1 - Incuindo o seu</option>
-                            <option value="2">2 - Incuindo o seu</option>
-                            <option value="3">3 - Incuindo o seu</option>
-                            <option value="4">4 - Incuindo o seu</option>
-                            <option value="5">5 - Incuindo o seu</option>
+                            <option value="1">1 - Incluindo o seu</option>
+                            <option value="2">2 - Incluindo o seu</option>
+                            <option value="3">3 - Incluindo o seu</option>
+                            <option value="4">4 - Incluindo o seu</option>
+                            <option value="5">5 - Incluindo o seu</option>
                         </Form.Select>
                     </Form.Group>
                 </Form>
