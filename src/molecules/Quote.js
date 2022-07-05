@@ -4,13 +4,9 @@ const useStyles = makeStyles((theme) => {
     return {
         container: {
             height: 172,
-            // left: 0,
             backgroundImage: 'url("/img/foto4.jpg")',
             backgroundSize: 'cover',
             padding: '2rem 2rem 0',
-            // display: 'flex',
-            // flexDirection: 'column',
-            // justifyContent: 'center',
             [theme.breakpoints.up('md')]: {
                 padding: '4rem 2rem 0',
                 height: 460,
@@ -41,9 +37,7 @@ const useStyles = makeStyles((theme) => {
             textTransform: 'lowercase',
             color: '#FFFBF3',
             [theme.breakpoints.up('md')]: {
-                // alignItems: 'center',
                 fontSize: '100px !important',
-                // width: '80%'
             }
         },
     }
