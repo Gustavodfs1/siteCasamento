@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => {
             alignItems: 'center',
             [theme.breakpoints.up('md')]: {
                 // minHeight: '40rem'
-                minHeight: 'calc(100vh - 50px)',
+                minHeight: 'calc(100vh - 150px)',
             }
         },
         title: {
