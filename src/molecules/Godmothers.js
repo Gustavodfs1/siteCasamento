@@ -155,9 +155,9 @@ const godmothers = [
   },
   {
     name1: 'Fernanda',
-    pic1: '/img/godmother/aninha.png',
-    name2: 'Feliipe',
-    pic2: '/img/godmother/yo.png',
+    pic1: '/img/godmother/FernandaP.png',
+    name2: 'Felipe',
+    pic2: '/img/godmother/Filipe.png',
   },
 ];
 

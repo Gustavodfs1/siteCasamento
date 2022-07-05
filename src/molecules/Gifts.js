@@ -4,14 +4,14 @@ import Carousel from "react-multi-carousel"; // https://www.npmjs.com/package/re
 import "react-multi-carousel/lib/styles.css";
 import {Experience} from "../atoms/Experience";
 import {useState} from "react";
-import {Button, Container, Grid} from "@mui/material";
+import {Box, Button, Container, Grid, Modal, Typography} from "@mui/material";
 
 const useStyles = makeStyles((theme) => {
   return {
     container: {
       // left: 0,
       backgroundSize: 'cover',
-      padding: '0 2rem',
+      padding: '0 4rem',
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'center',
@@ -181,8 +181,28 @@ export const Gifts = () => {
   const classes = useStyles();
   const [isExpanded, setExpanded] = useState(false);
 
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   return (
     <div className={classes.container}>
+      <Button onClick={handleOpen}>Open modal</Button>
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box>
+          <Typography id="modal-modal-title" variant="h6" component="h2">
+            Text in a modal
+          </Typography>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+          </Typography>
+        </Box>
+      </Modal>
       <Container>
         <Title text="VAMOS AMAR OS RECEBIDOS!"/>
         <div className={classes.subtitle}>Lista de presentes</div>
