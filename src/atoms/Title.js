@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => {
             fontWeight: '700 !important',
             letterSpacing: '3px !important',
             [theme.breakpoints.up('md')]: {
-                fontSize: '40px !important',
+                fontSize: '32px !important',
             }
         },
     }
