@@ -142,10 +142,10 @@ export const Rspv = () => {
       <Container >
         <div className={classes.title}>CONFIRME SUA PRESENÇA</div>
         <div className={classes.subtitle}>E NOS VEMOS LÁ! ;)</div>
-        <Form style={{ alignItems:'center',margin: '1rem 5rem 2rem 20rem'}} onSubmit={handleSubmit((data) => setData(JSON.stringify(data)))}>
+        <Form style={{ alignItems:'center',margin: '1rem -5rem 2rem 2rem'}} onSubmit={handleSubmit((data) => setData(JSON.stringify(data)))}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label></Form.Label>
-            <Form.Control style={{width:'60%'}} onChange={event => setNome(event.target.value)} type="nome" placeholder="Seu nome"/>
+            <Form.Control style={{width:'60%'}} onChange={event => setNome(event.target.value)} type="nome" placeholder="Seu nome" required/>
             <Form.Text className="text-muted">
             </Form.Text>
           </Form.Group>
@@ -155,7 +155,7 @@ export const Rspv = () => {
             <Form.Control className="input"  style={{height: 70, width: '60%'}} onChange={event => setMensagem(event.target.value)} type="mensagem" placeholder="Mensagem"/>
           </Form.Group>
           <Form.Label style={{color: "white"}}>Indique a quantidade de confirmados</Form.Label>
-          <Form.Group className="mb-3" controlId="formBasicCheckbox">
+          <Form.Group className="mb-3" controlId="formBasicCheckbox" required>
             <Form.Select onChange={event => setAcompanhantes(event.target.value)} size="sm" style={{width: "60%"}}
                          aria-label="Convites incluindo voce">
               <option>Quantidade</option>
