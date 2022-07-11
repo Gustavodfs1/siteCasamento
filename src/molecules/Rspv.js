@@ -83,8 +83,11 @@ const useStyles = makeStyles((theme) => {
         fontSize: '32px !important',
       }
     },
+    footer:{
+      
+    },
     input: {
-
+      
       [theme.breakpoints.up('md')]: {
 
       }
@@ -136,20 +139,20 @@ export const Rspv = () => {
 
   return (
     <div id="rspv" className={classes.container}>
-      <Container>
+      <Container >
         <div className={classes.title}>CONFIRME SUA PRESENÇA</div>
         <div className={classes.subtitle}>E NOS VEMOS LÁ! ;)</div>
-        <Form onSubmit={handleSubmit((data) => setData(JSON.stringify(data)))}>
+        <Form style={{ alignItems:'center',margin: '1rem 5rem 2rem 20rem'}} onSubmit={handleSubmit((data) => setData(JSON.stringify(data)))}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label></Form.Label>
-            <Form.Control onChange={event => setNome(event.target.value)} type="nome" placeholder="Seu nome"/>
+            <Form.Control style={{width:'60%'}} onChange={event => setNome(event.target.value)} type="nome" placeholder="Seu nome"/>
             <Form.Text className="text-muted">
             </Form.Text>
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Label></Form.Label>
-            <Form.Control className="input" onChange={event => setMensagem(event.target.value)} type="mensagem" placeholder="Mensagem"/>
+            <Form.Control className="input"  style={{height: 70, width: '60%'}} onChange={event => setMensagem(event.target.value)} type="mensagem" placeholder="Mensagem"/>
           </Form.Group>
           <Form.Label style={{color: "white"}}>Indique a quantidade de confirmados</Form.Label>
           <Form.Group className="mb-3" controlId="formBasicCheckbox">
@@ -163,10 +166,12 @@ export const Rspv = () => {
               <option value="5">5 - Incluindo o seu</option>
             </Form.Select>
           </Form.Group>
-        </Form>
-        <DebsButton onClick={envioRspv} variant="contained" target="_blank">
+        
+        <DebsButton style={{color:'white', fontSize:15, marginTop:'1rem', alignItems: 'center'}} onClick={envioRspv} variant="contained" target="_blank">
           ENVIAR
         </DebsButton>
+        </Form>
+        <div style={{width: '100%', height: '2rem'}}></div>
       </Container>
     </div>
   );

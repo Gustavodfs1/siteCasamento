@@ -130,8 +130,8 @@ const godmothers = [
     pic2: '/img/godmother/hudson.png',
   },
   {
-    name1: 'Kika',
-    pic1: '/img/godmother/kika.png',
+    name1: 'Yo',
+    pic1: '/img/godmother/yo.png',
     name2: 'Aninha',
     pic2: '/img/godmother/aninha.png',
   },

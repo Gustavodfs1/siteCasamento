@@ -5,6 +5,7 @@ import "react-multi-carousel/lib/styles.css";
 import {Experience} from "../atoms/Experience";
 import {useState} from "react";
 import {Box, Button, Container, Grid, Modal, Typography} from "@mui/material";
+import { Icon } from "@mui/material";
 
 const useStyles = makeStyles((theme) => {
   return {
@@ -46,7 +47,7 @@ const useStyles = makeStyles((theme) => {
       fontFamily: 'Fakt Pro',
       fontStyle: 'normal',
       fontWeight: 300,
-      fontSize: 10,
+      fontSize: 16,
       lineHeight: '160%',
       alignItems: 'center',
       letterSpacing: '0.095em',
@@ -216,6 +217,8 @@ export const Gifts = () => {
         </div>
         <div className={classes.experiencesSubtitle}>
           Caso prefira, vamos amar ser presenteados com experiências para a Lua-de-Mel!
+          Você pode fazer o pix para a chave cpf: <strong>066.728.156-86</strong>. <br/>                      
+          Não esquece de deixar um recadinho pra gente <Icon ></Icon>
         </div>
         <div className={classes.experiences}>
           {isExpanded ?
