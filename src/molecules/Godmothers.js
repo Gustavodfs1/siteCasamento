@@ -112,7 +112,7 @@ const godmothers = [
     pic2: '/img/godmother/lorena.png',
   },
   {
-    name1: 'Clarissa',
+    name1: 'Clarice',
     pic1: '/img/godmother/clarice.png',
     name2: 'Ana Luiza',
     pic2: '/img/godmother/nalu.png',
