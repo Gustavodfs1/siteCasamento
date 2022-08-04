@@ -108,7 +108,7 @@ const godmothers = [
   {
     name1: 'Igor',
     pic1: '/img/godmother/igor.png',
-    name2: 'Lorena',
+    name2: 'Lorenna',
     pic2: '/img/godmother/lorena.png',
   },
   {
@@ -144,7 +144,7 @@ const godmothers = [
   {
     name1: 'Ju',
     pic1: '/img/godmother/ju.png',
-    name2: 'Tiago',
+    name2: 'Thiago',
     pic2: '/img/godmother/tiago.png',
   },
   {
@@ -156,7 +156,7 @@ const godmothers = [
   {
     name1: 'Fernanda',
     pic1: '/img/godmother/FernandaP.png',
-    name2: 'Felipe',
+    name2: 'Filipe',
     pic2: '/img/godmother/Filipe.png',
   },{
     name1: 'Rô',
