@@ -158,6 +158,11 @@ const godmothers = [
     pic1: '/img/godmother/FernandaP.png',
     name2: 'Felipe',
     pic2: '/img/godmother/Filipe.png',
+  },{
+    name1: 'Rô',
+    pic1: '/img/godmother/ro.png',
+    name2: 'Thiago',
+    pic2: '/img/godmother/leitao.png',
   },
 ];
 
