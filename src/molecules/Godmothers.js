@@ -175,7 +175,7 @@ export const Godmothers = () => {
         <Title text="MADRINHAS E PADRINHOS"/>
         <div className={classes.subtitle}>Mais que amigos, friends!</div>
         <div className={classes.godmothers}>
-          <Carousel responsive={responsive}>
+          <Carousel responsive={responsive} autoPlay={true} autoPlaySpeed={2000}  draggable infinite>
             {godmothers.map((item, index) =>
               <div key={index} className={classes.godmothersCollumn}>
                 <Godmother pic={item.pic1} name={item.name1}/>
